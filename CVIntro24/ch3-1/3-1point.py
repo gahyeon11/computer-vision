@@ -36,7 +36,7 @@ cv2.putText(img_div2,"divide(2)",(20,30),cv2.FONT_HERSHEY_PLAIN,1.5, 0,2)
 img_reverse2 = cv2.subtract(255,gray)    # y = 255 - x
 cv2.putText(img_reverse2,"subtract(255)",(20,30),cv2.FONT_HERSHEY_PLAIN,1.5, 0,2)
 pp2=np.hstack((gray, img_plus2, img_minus2, img_multi2, img_div2, img_reverse2)) # hstack은 높이(세로)가 같아야 함
-#cv2.imshow('point processing - opencv',pp2)
+# cv2.imshow('point processing - opencv',pp2)
 
 #4 크기가 같은 두개의 이미지
 img2=cv2.imread('opencv_logo256.png')
@@ -46,7 +46,7 @@ img_multi3 = cv2.multiply(img, img2)    # y = x1 * x2
 img_div3 = cv2.divide(img, img2)        # y = x1 / x2
 img_addW = cv2.addWeighted(img, 0.5, img2, 0.5, 0) # 이미지 블렌딩(Image Blending)
 pp4=np.hstack((img_plus3, img_minus3, img_multi3, img_div3,img_addW)) # hstack은 높이(세로)가 같아야 함
-#cv2.imshow('point processing - two images',pp4)
+# cv2.imshow('point processing - two images',pp4)
 
 #5 비선형 연산 : 감마연산
 #f = gray/255
