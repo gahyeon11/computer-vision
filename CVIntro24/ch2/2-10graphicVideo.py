@@ -20,7 +20,7 @@ while True:
     y = np.random.rand()  
     # rand() -> 0~1
     x = np.random.rand()
-    cv2.circle(frame, (int(x * 640), int(y * 480)), 50, (0, 0, 255), 4)
+    # cv2.circle(frame, (int(x * 640), int(y * 480)), 50, (0, 0, 255), 4)
 
     cv2.imshow('Video display', frame)
     

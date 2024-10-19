@@ -22,5 +22,5 @@ while True:
         cv2.imwrite('./captured.png', frame)  # 이미지 캡처 및 저장
         break
 
-cap.release()  # 카메라와 연결을 끊음
+# cap.release()  # 카메라와 연결을 끊음
 cv2.destroyAllWindows()

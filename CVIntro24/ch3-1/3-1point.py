@@ -8,7 +8,7 @@ if img is None:
     sys.exit('파일을 찾을 수 없습니다.')
 
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) # BGR 컬러 영상을 명암 영상으로 변환하여 저장
-cv2.imshow('original image - gray',gray)
+# cv2.imshow('original image - gray',gray)
 
 #2 사칙연산
 img_plus = gray + 50       # y = x + 50
@@ -22,7 +22,7 @@ cv2.putText(img_div,"/2",(20,30),cv2.FONT_HERSHEY_PLAIN,1.5, 0,2)
 img_reverse = 255 - gray    # y = 255 - x
 cv2.putText(img_reverse,"255-",(20,30),cv2.FONT_HERSHEY_PLAIN,1.5, 0,2)
 pp=np.hstack((gray, img_plus, img_minus, img_multi, img_div, img_reverse)) # hstack은 높이(세로)가 같아야 함
-#cv2.imshow('point processing',pp)
+# cv2.imshow('point processing',pp)
 
 #3 opencv 함수
 img_plus2 = cv2.add(gray, 50)         # y = x + 50
